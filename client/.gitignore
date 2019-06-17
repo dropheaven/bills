@@ -24,3 +24,4 @@ yarn-error.log*
 
 # tutorial code
 notes.js
+.env

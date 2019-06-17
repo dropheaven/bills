@@ -1,11 +1,14 @@
 import React from "react";
 
 export default class ExpenseForm extends React.Component {
-  state = {
-    name: "",
-    amount: "",
-    dueDate: ""
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: props.expense ? props.expense.name : "",
+      amount: props.expense ? props.expense.amount : "",
+      dueDate: props.expense ? props.expense.dueDate : ""
+    };
+  }
 
   onNameChange = e => {
     const name = e.target.value;

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do 
-    resources :expenses
+    namespace :v1 do 
+      resources :expenses
+    end
   end
 end

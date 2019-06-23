@@ -10,6 +10,7 @@ const Header = () => (
     <NavLink to="/expenses/new" exact={true}>
       New Expense
     </NavLink>
+    <NavLink to="/login">Login</NavLink>
   </div>
 );
 
